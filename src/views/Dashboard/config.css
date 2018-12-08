@@ -1,0 +1,71 @@
+@keyframes rotation {
+  from {
+    transform: rotateY(0deg);
+ }
+  to {
+    transform: rotateY(360deg);
+ }
+}
+#backNextBtn * {
+  color: white !important;
+  padding: 10px;
+}
+#three.carousel {
+  padding: 20px;
+  perspective: 500px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#three.carousel > * {
+  flex: 0 0 auto;
+}
+#three.carousel figure {
+  margin: 0;
+  width: 400px;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+  transform-origin: 50% 50% -299.8427124746px;
+}
+#three.carousel figure img {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 100px;
+  opacity: 0.9;
+}
+#three.carousel figure img:not(:first-of-type) {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform-origin: 50% 50% -299.8427124746px;
+}
+#three.carousel figure img:nth-child(2) {
+  transform: rotateY(2.0943951024rad);
+}
+#three.carousel figure img:nth-child(3) {
+  transform: rotateY(4.1887902048rad);
+}
+#three.carousel nav {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0 0;
+}
+#three.carousel nav button {
+  flex: 0 0 auto;
+  margin: 0 5px;
+  cursor: pointer;
+  color: #333;
+  background: none;
+  border: 1px solid;
+  letter-spacing: 1px;
+  padding: 5px 10px;
+}
+#three.carousel figure:hover{
+  animation-play-state: paused;
+  cursor: pointer;
+}
+#three.carousel figure img:hover{
+  filter: blur(1.2px);
+  filter: brightness(1.5)
+}

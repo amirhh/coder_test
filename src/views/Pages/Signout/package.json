@@ -1,0 +1,6 @@
+{
+  "name": "Signout",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./Signout.js"
+}

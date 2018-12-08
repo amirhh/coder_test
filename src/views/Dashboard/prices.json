@@ -1,0 +1,100 @@
+{
+  "prices" : [
+    {
+      "name" : "طراحی گرافیکی اختصاصی هر صفحه اپلیکیشن",
+      "info" : "5 روز",
+      "priceIos": "150",
+      "priceAndroid": "150000"
+    },
+    {
+      "name" : "طراحی لوگو",
+      "info" : "5 روز",
+      "priceIos": "370",
+      "priceAndroid": "370"
+    },
+    {
+      "name" : "ورود با حساب کاربری",
+      "info" : "2 روز",
+      "priceIos": "860",
+      "priceAndroid": "860"
+    },
+    {
+      "name" : "پخش صوت یا تصویر",
+      "info" : "5 روز",
+      "priceIos": "860",
+      "priceAndroid": "860"
+    },
+    {
+      "name" : "همگام کردن اطلاعات بین کاربر و سرور",
+      "info" : "7 روز",
+      "priceIos": "860",
+      "priceAndroid": "860"
+    },
+    {
+      "name" : "استفاده از نقشه گوگل مپ",
+      "info" : "3 روز",
+      "priceIos": "860",
+      "priceAndroid": "860"
+    },
+    {
+      "name" : "مکان یابی کاربران در نقشه",
+      "info" : "7 روز",
+      "priceIos": "860",
+      "priceAndroid": "860"
+    },
+    {
+      "name" : "چت آنلاین بلادرنگ بین کاربران ",
+      "info" : "4 روز",
+      "priceIos": "860",
+      "priceAndroid": "860"
+    },
+    {
+      "name" : "دانلود فایل با اپلیکیشن",
+      "info" : "2 روز",
+      "priceIos": "860",
+      "priceAndroid": "860"
+    },
+    {
+      "name" : "ارائه اپلیکیشن در هر مارکت",
+      "info" : "5 روز",
+      "priceIos": "860",
+      "priceAndroid": "860"
+    },
+    {
+      "name" : "ساخت فروشگاه",
+      "info" : "14 روز",
+      "priceIos": "860",
+      "priceAndroid": "860"
+    },
+    {
+      "name" : "اتصال به درگاه پرداخت بانکی در صورت وجود مجوز فعالیت",
+      "info" : "3 روز",
+      "priceIos": "860",
+      "priceAndroid": "860"
+    },
+    {
+      "name" : "سایت کنترل اپلیکیشن CPanel",
+      "info" : "14 روز",
+      "priceIos": "860",
+      "priceAndroid": "860"
+    },
+    {
+      "name" : "نمایش پروفایل شخصی کاربران",
+      "info" : "6 روز",
+      "priceIos": "860",
+      "priceAndroid": "860"
+    },
+    {
+      "name" : "سیستم نظرسنجی کاربران",
+      "info" : "3 روز",
+      "priceIos": "860",
+      "priceAndroid": "860"
+    },
+    {
+      "name" : "سرویس push notification",
+      "info" : "10 روز",
+      "priceIos": "860",
+      "priceAndroid": "860"
+    }
+  ]
+}

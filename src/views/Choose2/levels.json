@@ -1,0 +1,112 @@
+{
+  "Data": [
+    {
+      "id": 1,
+      "title": "قرار هست از نرم افزار خود کسب درآمد کنید؟",
+      "questions": [
+        {
+          "text": "نقدی در محل",
+          "shortName": "upFront",
+          "priceAndroid": 1500,
+          "priceIos": 370,
+          "priceCross": 420
+        },
+        {
+          "text": "درون برنامه‌ای",
+          "shortName": "inApp",
+          "priceAndroid": 1500,
+          "priceIos": 370,
+          "priceCross": 420
+        },
+        {
+          "text": "نمیدونم",
+          "shortName": "notSure",
+          "priceAndroid": 1500,
+          "priceIos": 370,
+          "priceCross": 420
+        },
+        {
+          "text": "نه ",
+          "shortName": "no",
+          "priceAndroid": 1500,
+          "priceIos": 370,
+          "priceCross": 420
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "title": "آیا کاربران دارای حساب کاربری شخصی هستند ؟",
+      "questions": [
+        {
+          "text": "بله",
+          "shortName": "yes",
+          "priceAndroid": 1500,
+          "priceIos": 370,
+          "priceCross": 420
+        },
+        {
+          "text": "مطمئن نیستم",
+          "shortName": "notSure",
+          "priceAndroid": 1500,
+          "priceIos": 370,
+          "priceCross": 420
+        },
+        {
+          "text": "نه",
+          "shortName": "no",
+          "priceAndroid": 1500,
+          "priceIos": 370,
+          "priceCross": 420
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "title": "آیا نیاز به ورود کاربران دارید؟",
+      "questions": [
+        {
+          "text": "ایمیل",
+          "shortName": "email",
+          "priceAndroid": 1500,
+          "priceIos": 370,
+          "priceCross": 420
+        },
+        {
+          "text": "شبکه های اجتماعی",
+          "shortName": "social",
+          "priceAndroid": 1500,
+          "priceIos": 370,
+          "priceCross": 420
+        },
+        {
+          "text": "مطمئن نیستم",
+          "shortName": "notSure",
+          "priceAndroid": 1500,
+          "priceIos": 370,
+          "priceCross": 420
+        },
+        {
+          "text": "نه",
+          "shortName": "no",
+          "priceAndroid": 1500,
+          "priceIos": 370,
+          "priceCross": 420
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "title": "قرار هست از نرم افزار خود کسب درآمد کنید؟",
+      "questions": [
+        {
+          "text": "نقدی در محل",
+          "shortName": "upFront",
+          "priceAndroid": 1500,
+          "priceIos": 370,
+          "priceCross": 420
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "name": "AllInfo",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./AllInfo.js"
+}
