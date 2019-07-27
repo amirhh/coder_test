@@ -1,41 +1,46 @@
 import React, { Component } from 'react';
-import { Badge, DropdownItem, DropdownMenu, DropdownToggle, Nav, NavItem, NavLink } from 'reactstrap';
-import PropTypes from 'prop-types';
+import { Nav, NavItem, NavLink } from 'reactstrap';
+// import PropTypes from 'prop-types';
 import { Progress } from 'react-sweet-progress';
 import "react-sweet-progress/lib/style.css";
-import { AppAsideToggler, AppHeaderDropdown, AppNavbarBrand, AppSidebarToggler } from '@coreui/react';
+import { connect } from 'react-redux'
+import { AppNavbarBrand, AppSidebarToggler } from '@coreui/react';
 import logo from '../../assets/img/brand/logo.svg'
-import sygnet from '../../assets/img/brand/logo.svg'
-import Gstate from '../GlobalState';
 
-const propTypes = {
-  children: PropTypes.node,
-};
+// const propTypes = {
+//   children: PropTypes.node,
+// };
 
-const defaultProps = {};
+// const defaultProps = {};
 
 class DefaultHeader extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      percent:0,
-      isShowProgress:false,
-      price:0
+      percent: 0,
+      isShowProgress: this.props.prices.length > 0 ? true : false,
+      price: 0
     };
   }
 
   componentDidMount = () => {
-    let interval2 =setInterval(() => {
-      // if(Gstate.percent === 100)
-      //   clearInterval(interval2);
-      this.setState({percent:Gstate.percent,isShowProgress:Gstate.isShowProgress,price:Gstate.price});
-    }, 1000);
+    // let interval2 =setInterval(() => {
+    //   // if(Gstate.percent === 100)
+    //   //   clearInterval(interval2);
+    //   this.setState({percent:Gstate.percent,isShowProgress:Gstate.isShowProgress,price:Gstate.price});
+    // }, 1000);
   }
-  render() {
-    
 
+  componentWillReceiveProps(nextProps) {
+    nextProps.prices.length > 0 ? this.setState({isShowProgress : true , percent : 100 , price : nextProps.prices.reduce((prev, cur) => prev + cur.price, 0)}) : this.setState({isShowProgress : false});
+
+  }
+  
+
+
+  render() {
     // eslint-disable-next-line
-    const { children, ...attributes } = this.props;
+    const { children } = this.props;
 
     return (
       <React.Fragment>
@@ -46,12 +51,12 @@ class DefaultHeader extends Component {
         />
         {/* <AppSidebarToggler className="d-md-down-none" display="lg" /> */}
 
-        <Nav style={{textAlign:'right'}} navbar>
+        <Nav style={{ textAlign: 'right' }} navbar>
           <NavItem >
-            <NavLink style={{color:'white'}} href="/">قیمت ها</NavLink>
+            <NavLink style={{ color: 'white' }} href="/"> خانه </NavLink>
           </NavItem>
-          <NavItem style={{width:'75%',display:(this.state.isShowProgress)?'list-item':'none'}} >
-            <NavLink style={{width:'100%',color:'white'}} href="/"><Progress percent={this.state.percent} /> {this.state.price}تومان</NavLink>
+          <NavItem style={{ width: '75%', display: (this.state.isShowProgress) ? 'list-item' : 'none' }} >
+            <NavLink style={{ width: '100%', color: 'white' }} href="/"><Progress percent={this.state.percent} /> {this.state.price.toLocaleString()} تومان </NavLink>
           </NavItem>
         </Nav>
       </React.Fragment>
@@ -59,7 +64,14 @@ class DefaultHeader extends Component {
   }
 }
 
-DefaultHeader.propTypes = propTypes;
-DefaultHeader.defaultProps = defaultProps;
+// DefaultHeader.propTypes = propTypes;
+// DefaultHeader.defaultProps = defaultProps;
 
-export default DefaultHeader;
+const mapStateToProps = state => ({
+  // todos: getVisibleTodos(state.todos, state.visibilityFilter)
+  prices: state.price
+})
+
+
+export default connect(mapStateToProps, null)(DefaultHeader);
+// export default DefaultHeader;

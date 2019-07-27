@@ -4,18 +4,9 @@ import { Container } from 'reactstrap';
 import Background from './../../assets/img/noise.png';
 import {
   AppAside,
-  AppBreadcrumb,
   AppFooter,
   AppHeader,
-  AppSidebar,
-  AppSidebarFooter,
-  AppSidebarForm,
-  AppSidebarHeader,
-  AppSidebarMinimizer,
-  AppSidebarNav,
 } from '@coreui/react';
-// sidebar nav config
-import navigation from '../../_nav';
 // routes config
 import routes from '../../routes';
 import DefaultAside from './DefaultAside';

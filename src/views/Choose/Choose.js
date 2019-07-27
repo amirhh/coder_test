@@ -1,13 +1,8 @@
 import React, { Component } from 'react';
-import { DropdownToggle, Row, Col, Card, CardBody, CardHeader, Label, DropdownItem, DropdownMenu, Button, Table, InputGroup, InputGroupAddon, InputGroupButtonDropdown, Modal, ModalHeader, ModalBody, ModalFooter, Form, Input, Pagination, PaginationItem, PaginationLink } from 'reactstrap';
-import axios from 'axios';
-import { ToastContainer, toast } from 'react-toastify';
-import InputRange from 'react-input-range';
+import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import 'react-input-range/lib/css/index.css';
 import 'react-toastify/dist/ReactToastify.min.css';
 import queryString from 'query-string';
-import { isNullOrUndefined } from 'util';
-import { AppSwitch } from '@coreui/react'
 import { Animated } from "react-animated-css";
 import Gstate from "./../../containers/GlobalState";
 
@@ -29,7 +24,6 @@ class Choose extends Component {
   }
   componentWillMount = () => {
     const parsed = queryString.parse(this.props.location.search);
-    console.log(parsed.OS);
     if(parsed.OS !== undefined) {
       
       this.setState({OS:parsed.OS})
@@ -39,7 +33,7 @@ class Choose extends Component {
     }
   }
 
-  toggle(os) {
+  toggle() {
     this.setState({ animationShow: false, modal: !this.state.modal });
     setTimeout(() => {
       this.props.history.push({
@@ -65,14 +59,14 @@ class Choose extends Component {
         })
       }
       else if (choose === "smart") {
-        this.props.history.push({
-          pathname: '/choose2',
-          search: `?OS=${this.state.OS}&q1=${choose}`,
-          state: {
-            selectedOs: this.state.OS,
-            choose1: choose
-          }
-        })
+        // this.props.history.push({
+        //   pathname: '/choose2',
+        //   search: `?OS=${this.state.OS}&q1=${choose}`,
+        //   state: {
+        //     selectedOs: this.state.OS,
+        //     choose1: choose
+        //   }
+        // })
       }
 
     }, 1000);
@@ -97,7 +91,7 @@ class Choose extends Component {
         <Animated style={Styles.animation_choose} animationIn={this.state.animationIn} animationOut={this.state.animationOut} isVisible={this.state.animationShow}>
           <ul id="chUl">
             <li><span className="hoverA" onClick={this.handleChoose.bind(this, 'expertise')} >انتخاب با جزییات تخصصی</span></li>
-            <li><span className="hoverA" onClick={this.handleChoose.bind(this, 'smart')} >انتخاب هوشمند</span></li>
+            <li><span className="hoverA" onClick={() => alert("در حال حاضر امکان انتخاب این گزینه وجود ندارد")} >انتخاب هوشمند</span></li>
           </ul>
         </Animated>
       );

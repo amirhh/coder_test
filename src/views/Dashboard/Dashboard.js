@@ -1,14 +1,9 @@
 import React, { Component } from 'react';
-import { DropdownToggle, Row, Col, Card, CardBody, CardHeader, Label, DropdownItem, DropdownMenu, Button, Table, InputGroup, InputGroupAddon, InputGroupButtonDropdown, Modal, ModalHeader, ModalBody, ModalFooter, Form, Input, Pagination, PaginationItem, PaginationLink } from 'reactstrap';
+import {connect} from 'react-redux'
 import './SingleUser';
-import axios from 'axios';
-import SingleUser from './SingleUser';
-import { ToastContainer, toast } from 'react-toastify';
-import InputRange from 'react-input-range';
+import {addPrice} from './../../actions/index'
 import 'react-input-range/lib/css/index.css';
 import 'react-toastify/dist/ReactToastify.min.css';
-import queryString from 'query-string';
-import { isNullOrUndefined } from 'util';
 import './config.css'
 import pricesJson from './prices.json';
 import { AppSwitch } from '@coreui/react'
@@ -69,18 +64,22 @@ class Charts extends Component {
       modal: !this.state.modal
     });
   }
+
   handleOSClick(OS) {
     // console.log("OS : ", OS);
     this.setState({ animationShow: false });
     switch (OS) {
       case "ios":
-        Gstate.price = Gstate.iosPrice;
+        this.props.addPrice(0,Gstate.iosPrice,null,OS)
+        // Gstate.price = Gstate.iosPrice;
         break;
       case "android":
-        Gstate.price = Gstate.androidPrice;
+        this.props.addPrice(0,Gstate.androidPrice,null,OS)
+        // Gstate.price = Gstate.androidPrice;
         break;
       case "ios_android":
-        Gstate.price = Gstate.crossPrice;
+        this.props.addPrice(0,Gstate.crossPrice,null,OS)
+        // Gstate.price = Gstate.crossPrice;
         break;
 
       default:
@@ -103,6 +102,7 @@ class Charts extends Component {
   handler(param) {
     this.setState(prevState => ({ sum: parseInt(prevState.sum) + parseInt(param) }))
   }
+  
 
   render() {
     return (
@@ -124,5 +124,12 @@ class Charts extends Component {
   }
 }
 
+const mapStateToProps = state => ({
+  prices : state.price
+})
 
-export default Charts;
+const mapDispatchToProps = dispatch => ({
+  addPrice: (id,price,name,platform) => dispatch(addPrice(id,price,name,platform))
+})
+
+export default connect(mapStateToProps,mapDispatchToProps)(Charts);

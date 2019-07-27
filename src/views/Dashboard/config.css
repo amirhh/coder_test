@@ -10,6 +10,9 @@
   color: white !important;
   padding: 10px;
 }
+#backNextBtn .nav .fa {
+	z-index: -1;
+}
 #three.carousel {
   padding: 20px;
   perspective: 500px;

@@ -37,9 +37,9 @@ class App extends Component {
     Gstate.animationOut = "fadeOutUp";
     Gstate.percent = 0;
     Gstate.price = 0;
-    Gstate.androidPrice=1000;
-    Gstate.iosPrice=1200;
-    Gstate.crossPrice=1500;
+    Gstate.androidPrice=2000000;
+    Gstate.iosPrice=2500000;
+    Gstate.crossPrice=3700000;
   }
 
   render() {

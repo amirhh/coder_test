@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
-import { Nav, NavItem, NavLink, Progress, TabContent, TabPane, ListGroup, ListGroupItem } from 'reactstrap';
+import { Nav, NavItem, NavLink, TabContent, TabPane } from 'reactstrap';
 import PropTypes from 'prop-types';
-import classNames from 'classnames';
 import { AppSwitch } from '@coreui/react'
 import { isNullOrUndefined } from 'util';
-import Gstate from './../GlobalState/Gstate'
 
 const propTypes = {
   children: PropTypes.node,
@@ -81,12 +79,12 @@ class DefaultAside extends Component {
 
   changeTheme(isDarkTheme) {
     if (isDarkTheme) {
-      for (var i = 0; i < this.state.data_darks.length; i++) {
+      for (let i = 0; i < this.state.data_darks.length; i++) {
           this.state.data_darks[i].classList.add("mystyle");
       }
     }
     else {
-      for (var i = 0; i < this.state.data_darks.length; i++) {
+      for (let i = 0; i < this.state.data_darks.length; i++) {
           this.state.data_darks[i].classList.remove("mystyle");
       }
     }
@@ -97,7 +95,6 @@ class DefaultAside extends Component {
       return <div></div>
     }
     else {
-      const { children, ...attributes } = this.props;
       return (
         <React.Fragment>
           <Nav tabs className={(this.state.isDark)?'mystyle':''}>

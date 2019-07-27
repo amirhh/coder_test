@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import { Progress } from 'reactstrap';
-import moment from 'moment-jalaali';
 import { AppSwitch } from '@coreui/react'
 
 class SingleUser extends Component {

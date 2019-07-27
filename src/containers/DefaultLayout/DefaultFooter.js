@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import packageJson from './../../../package.json';
 import Gstate from './../GlobalState/Gstate'
 const propTypes = {
   children: PropTypes.node,
@@ -12,7 +11,7 @@ class DefaultFooter extends Component {
   render() {
 
     // eslint-disable-next-line
-    const { children, ...attributes } = this.props;
+    const { children } = this.props;
 
     return (
       <React.Fragment >

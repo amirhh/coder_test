@@ -1,116 +1,164 @@
 {
   "prices" : [
     {
-      "name" : "طراحی گرافیکی اختصاصی هر صفحه اپلیکیشن",
-      "info" : "5 روز",
-      "priceIos": 150,
-      "priceAndroid": 150000,
-      "priceCross": 420
+      "id" : 1,
+      "name" : "طراحی گرافیکی اختصاصی هر صفحه اپلیکیشن (فرض قیمت 10 صفحه)",
+      "info" : 5,
+      "priceAndroid": 1600000,
+      "priceIos": 2300000,
+      "priceCross": 2900000
     },
     {
+      "id" : 2,
       "name" : "طراحی لوگو",
-      "info" : "5 روز",
-      "priceIos": 370,
-      "priceAndroid": 370,
-      "priceCross": 420
+      "info" : 4,
+      "priceAndroid": 500000,
+      "priceIos": 500000,
+      "priceCross": 500000
     },
     {
+      "id" : 3,
       "name" : "ورود با حساب کاربری",
-      "info" : "2 روز",
-      "priceIos": 860,
-      "priceAndroid": 860,
-      "priceCross": 420
+      "info" : 2,
+      "priceAndroid": 1000000,
+      "priceIos": 1000000,
+      "priceCross": 1200000
     },
     {
+      "id" : 4,
       "name" : "پخش صوت یا تصویر",
-      "info" : "5 روز",
-      "priceIos": 860,
-      "priceAndroid": 860,
-      "priceCross": 420
+      "info" : 3,
+      "priceAndroid": 220000,
+      "priceIos": 250000,
+      "priceCross": 300000
     },
     {
+      "id" : 5,
       "name" : "همگام کردن اطلاعات بین کاربر و سرور",
-      "info" : "7 روز",
-      "priceIos": 860,
-      "priceAndroid": 860,
-      "priceCross": 420
+      "info" : 9,
+      "priceAndroid": 600000,
+      "priceIos": 650000,
+      "priceCross": 700000
     },
     {
+      "id" : 6,
       "name" : "استفاده از نقشه گوگل مپ",
-      "info" : "3 روز",
-      "priceIos": 860,
-      "priceAndroid": 860,
-      "priceCross": 420
+      "info" : 4,
+      "priceAndroid": 500000,
+      "priceIos": 700000,
+      "priceCross": 1000000
     },
     {
+      "id" : 7,
       "name" : "مکان یابی کاربران در نقشه",
-      "info" : "7 روز",
-      "priceIos": 860,
-      "priceAndroid": 860,
-      "priceCross": 420
+      "info" : 10,
+      "priceAndroid": 2500000,
+      "priceIos": 4000000,
+      "priceCross": 6000000
     },
     {
-      "name" : "چت آنلاین بلادرنگ بین کاربران ",
-      "info" : "4 روز",
-      "priceIos": 860,
-      "priceAndroid": 860,
-      "priceCross": 420
+      "id" : 8,
+      "name" : "امکانات بلادرنگ ( مانند چت )",
+      "info" : 7,
+      "priceAndroid": 600000,
+      "priceIos": 650000,
+      "priceCross": 700000
     },
     {
+      "id" : 9,
       "name" : "دانلود فایل با اپلیکیشن",
-      "info" : "2 روز",
-      "priceIos": 860,
-      "priceAndroid": 860,
-      "priceCross": 420
+      "info" : 2,
+      "priceAndroid": 400000,
+      "priceIos": 450000,
+      "priceCross": 500000
     },
     {
-      "name" : "ارائه اپلیکیشن در هر مارکت",
-      "info" : "5 روز",
-      "priceIos": 860,
-      "priceAndroid": 860,
-      "priceCross": 420
+      "id" : 10,
+      "name" : "ارائه اپلیکیشن در هر مارکت (در صورت وجود اکانت اَپل ، هم قیمت اندروید)",
+      "info" : 9,
+      "priceAndroid": 200000,
+      "priceIos": 4000000,
+      "priceCross": 4200000
     },
     {
+      "id" : 11,
       "name" : "ساخت فروشگاه",
-      "info" : "14 روز",
-      "priceIos": 860,
-      "priceAndroid": 860,
-      "priceCross": 420
+      "info" : 14,
+      "priceAndroid": 5000000,
+      "priceIos": 6500000,
+      "priceCross": 7500000
     },
     {
+      "id" : 12,
       "name" : "اتصال به درگاه پرداخت بانکی در صورت وجود مجوز فعالیت",
-      "info" : "3 روز",
-      "priceIos": 860,
-      "priceAndroid": 860,
-      "priceCross": 420
+      "info" : 3,
+      "priceAndroid": 100000,
+      "priceIos": 150000,
+      "priceCross": 200000
     },
     {
+      "id" : 13,
       "name" : "سایت کنترل اپلیکیشن CPanel",
-      "info" : "14 روز",
-      "priceIos": 860,
-      "priceAndroid": 860,
-      "priceCross": 420
+      "info" : 14,
+      "priceAndroid": 4500000,
+      "priceIos": 4500000,
+      "priceCross": 4500000
     },
     {
+      "id" : 14,
       "name" : "نمایش پروفایل شخصی کاربران",
-      "info" : "6 روز",
-      "priceIos": 860,
-      "priceAndroid": 860,
-      "priceCross": 420
+      "info" : 6,
+      "priceAndroid": 350000,
+      "priceIos": 400000,
+      "priceCross": 500000
     },
     {
-      "name" : "سیستم نظرسنجی کاربران",
-      "info" : "3 روز",
-      "priceIos": 860,
-      "priceAndroid": 860,
-      "priceCross": 420
+      "id" : 15,
+      "name" : "(مشابه گوگل فرمز)سیستم نظرسنجی کاربران",
+      "info" : 3,
+      "priceAndroid": 500000,
+      "priceIos": 500000,
+      "priceCross": 500000
     },
     {
+      "id" : 16,
       "name" : "سرویس push notification",
-      "info" : "10 روز",
-      "priceIos": 860,
-      "priceAndroid": 860,
-      "priceCross": 420
+      "info" : 6,
+      "priceAndroid": 250000,
+      "priceIos": 400000,
+      "priceCross": 600000
+    },
+    {
+      "id" : 17,
+      "name" : "کار با sms (مثلا احراز هویت)",
+      "info" : 2,
+      "priceAndroid": 350000,
+      "priceIos": 400000,
+      "priceCross": 500000
+    },
+    {
+      "id" : 18,
+      "name" : "زبان دوم",
+      "info" : 12,
+      "priceAndroid": 2500000,
+      "priceIos": 4000000,
+      "priceCross": 6000000
+    },
+    {
+      "id" : 19,
+      "name" : "باز‌ طراحی اپلیکیشن به صورت pwa",
+      "info" : 19,
+      "priceAndroid": 4000000,
+      "priceIos": 4000000,
+      "priceCross": 4000000
+    },
+    {
+      "id" : 20,
+      "name" : "استفاده از سنسور های مختلف دستگاه (ژیروسکوپ،مجاورت و ...)",
+      "info" : 6,
+      "priceAndroid": 250000,
+      "priceIos": 400000,
+      "priceCross": 600000
     }
   ]
 }

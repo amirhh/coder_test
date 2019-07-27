@@ -1,13 +1,7 @@
 import React, { Component } from 'react';
-import { DropdownToggle, Row, Col, Card, CardBody, CardHeader, Label, DropdownItem, DropdownMenu, Button, Table, InputGroup, InputGroupAddon, InputGroupButtonDropdown, Modal, ModalHeader, ModalBody, ModalFooter, Form, Input, Pagination, PaginationItem, PaginationLink } from 'reactstrap';
-import axios from 'axios';
-import { ToastContainer, toast } from 'react-toastify';
-import InputRange from 'react-input-range';
+import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import 'react-input-range/lib/css/index.css';
 import 'react-toastify/dist/ReactToastify.min.css';
-import queryString from 'query-string';
-import { isNullOrUndefined } from 'util';
-import { AppSwitch } from '@coreui/react'
 import { Animated } from "react-animated-css";
 import Gstate from "../../containers/GlobalState";
 
@@ -61,7 +55,7 @@ class Choose3 extends Component {
     this.setState({ fields });
   }
 
-  toggle(os) {
+  toggle() {
     this.setState({ animationShow: false, modal: !this.state.modal });
     setTimeout(() => {
       this.props.history.push({

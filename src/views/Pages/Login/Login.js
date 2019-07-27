@@ -89,7 +89,6 @@ class Login extends Component {
   }
 
   render() {
-    const { phone_num, smscode } = this.state.fields;
     return (
       <div className="app flex-row align-items-center">
         <Container dir="ltr">
